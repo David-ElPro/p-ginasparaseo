@@ -1,4 +1,4 @@
-# p-ginasparaseo
+#Extensiones de SEO para Linntae.com
 Extensiones de SEO para Linntae.com
 Este repositorio contiene un conjunto de páginas de extensión diseñadas para potenciar el SEO de Linntae.com. Estas páginas son una herramienta clave para mejorar el posicionamiento del sitio en los motores de búsqueda, especialmente en Google, al proporcionar contenido y estructura optimizados.
 
