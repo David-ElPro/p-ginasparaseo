@@ -8,16 +8,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  
+
+	
 </head>
 <body>
+    <script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const dropdownToggle = document.querySelector(".dropdown > a");
+				const dropdownContent = document.querySelector(".dropdown-content");
+				
+				dropdownToggle.addEventListener("click", function (e) {
+					e.preventDefault(); // Prevenir navegación
+					dropdownContent.classList.toggle("show");
+				});
+			});
+		</script>
+     <nav>
+      <div class="logo"><img id="logoimagen" src= "https://storage.googleapis.com/linn-files/LinntaeWebPage/NavBar/linntaeblanco.png" alt="logodinamico"></div>
+      <ul class="nav-links">
+          <li><a href="https://linntae.com/#hero-content"><i class="fa-solid fa-house"></i>   INICIO</a></li>
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-info-circle"></i> MÁS INFORMACIÓN <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-content">
+              <li><a href="https://linntae.com/blogindex.html">Blog</a></li>
+              <li><a href="#">Vende recargas</a></li>
+              <li><a href="#">Ofrece pagos de servicios</a></li>
+              <li><a href="#">Vende pines electrónicos</a></li>
+              <li><a href="#">Vende recargas de TAG/PEAJES</a></li>
+              <li><a href="#">Legal y privacidad</a></li>
+            </ul>
+          </li>
+          <li><a href="#footer"><i class="fa-solid fa-phone"></i>   CONTÁCTANOS</a></li>
+          <li><a href="https://linntae.com/#plans"><i class="fa-solid fa-paper-plane"></i>   PLANES</a></li>
+          <li><a href="https://linntae.com/#carouselproducts"><i class="fa-solid fa-mobile"></i>   PRODUCTOS</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.linn.linntae&hl=es_MXn"><i class="fa-solid fa-download"></i>   DESCARGA LA APP</a></li>
+          <li><a href="https://linntae.com/#aboutt"><i class="fa-solid fa-handshake"></i>   QUIÉNES SOMOS</a></li>
+          <li><a href="https://linntae.mx/#/" id="acceso-clientes-navbar">ACCESO A CLIENTES <i class="fa-duotone fa-solid fa-user"></i></a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+  </nav>
+  
   <!-- Hero -->
   <section class="hero">
     <div class="hero-text">
       <h1>Recargas electrónicas fáciles y rápidas para tu negocio</h1>
-      <p>Con Linntae vende recargas de Telcel, Movistar, AT&T y más. Gana comisión en segundos.</p>
+      <p>Con Linntae vende recargas de Telcel, Movistar, AT&T y más. Gana comisión en segundos La mejor plataforma para vender recargas en México la encuentras con nosotros.</p>
       <div class="hero-buttons">
-        <a href="https://linntae.com/#register-section" class="btn btn-green">Regístrate gratis</button></a>
+        <a href="https://linntae.com/#register-section" class="btn btn-green">Regístrate gratis</a>
         <button class="btn btn-outline">Ver cómo funciona</button>
       </div>
     </div>
@@ -101,7 +138,7 @@
   <!-- CTA -->
   <section class="cta">
     <h2>Empieza hoy a vender recargas electrónicas con Linntae</h2>
-    <button class="btn btn-green">Regístrate gratis</button>
+    <a href="https://linntae.com/#register-section" class="btn btn-green">Regístrate gratis</a>
   </section>
 
   <!-- Footer -->
@@ -134,5 +171,6 @@
       <div class="social-icons">🌐 📘 🐦</div>
     </div>
   </footer>
+  <script src="navbar.js"></script>
 </body>
 </html>
