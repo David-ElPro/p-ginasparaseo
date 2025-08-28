@@ -42,10 +42,11 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, #f16200, #ff771d);
+  background: linear-gradient(to right, #f16200, #ffc400);
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 50px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hero-text {
@@ -88,6 +89,7 @@ p {
   background: #22c55e;
   color: white;
   border: none;
+  
 }
 
 .btn-green:hover {
@@ -349,28 +351,45 @@ footer {
   }
 
   /* Héroe */
+  .hero{
+    padding-top: 1px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+  }
+
   .hero-text h1 {
     font-size: 3.5em;
+    padding-bottom: 50px;
   }
   .hero-image img {
-    max-width: 500px;
+    max-width: 370px;
   }
   
   /* Beneficios: 3 columnas */
   .benefits {
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 40px;
+    padding-bottom: 50px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 
   /* Pasos: 4 columnas */
   .steps-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 
   .step img {
     height: 150px;
     width: 150px;
+  }
+  
+  .logos h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   
   /* Logos: Ajuste de tamaño en escritorio */
